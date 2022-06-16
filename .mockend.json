@@ -1,0 +1,39 @@
+{
+    "User" : {
+        "title": {
+            "string": {}
+        },
+        "hasMany": "Conversation"
+
+
+    },
+    "Conversation": {
+        "conversationparticipants": {
+            "hasMany": "ConversationParticipant"
+        }
+    },
+    "ConversationParticipant": {
+        "userId": {
+            "belongsTo": "User"
+        }
+    },
+    "Message": {
+        "content": {
+            "string": {}
+        },
+        "createdAt": {
+            "dateTime": {
+                "min": "2012-03-02T00:00:00Z",
+                "max": "2022-06-10T23:59:59Z"
+            }
+        },
+        "userId":{
+            "belongsTo": "User"
+        },
+        "conversation": {
+            "belongsTo": "Conversation"
+        }
+
+
+    }
+}
