@@ -5,17 +5,11 @@
         },
         "conversations": {
         "hasMany": "Conversation"
-    }
-
+        }
     },
     "Conversation": {
         "conversationparticipants": {
             "hasMany": "ConversationParticipant"
-        }
-    },
-    "ConversationParticipant": {
-        "userId": {
-            "belongsTo": "User"
         }
     },
     "Message": {
