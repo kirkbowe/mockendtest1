@@ -3,8 +3,9 @@
         "title": {
             "string": {}
         },
+        "conversations": {
         "hasMany": "Conversation"
-
+    }
 
     },
     "Conversation": {
