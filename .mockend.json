@@ -12,11 +12,6 @@
             "hasMany": "ConversationParticipant"
         }
     },
-    "ConversationParticipant": {
-        "userId": {
-            "belongsTo": "User"
-        }
-    },
     "Message": {
         "content": {
             "string": {}
